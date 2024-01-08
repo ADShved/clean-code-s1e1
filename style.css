@@ -2,27 +2,27 @@
 body {
   background-color: #f8f8f8;
   color:  #333;
-  font-family:  Lato,  sans-serif;
+  font-family:  "Lato,  sans-serif";
 }
-.aaa {
+.head {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.head__img{
   width: 100%;
 }
-.aaa .more_inf {
-  font-family: fantasy, cursive;
+.head__text {
+  font-family: "fantasy, cursive";
 }
 
 @media (max-width:768px) {
-  .aaa { 
+  .head { 
     text-align: center;
   }
 }
-  .centered-main-page-element {
+  .todo {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -32,10 +32,10 @@ body {
     display: inline-block;
     flex-grow: 1
   }
-  .task-row-wrapper {
+  .todo__task {
     display: flex;
   }
-  ul {
+  .todo__item {
     margin:0;
     padding: 0px;
   }
@@ -128,21 +128,21 @@ body {
   }
 
 /* Completed */
-  ul#completed-tasks label {
+  #completed-tasks label {
     text-decoration: line-through;
     color: #888;
   }
 
 /* Edit Task */
-  ul li input[type=text] {
+  .todo__item li input[type=text] {
     display:none
   }
 
-  ul li.editMode input[type=text] {
+  .todo__item li.editMode input[type=text] {
     display:inline-block;
     width:224px
   }
 
-  ul li.editMode label {
+  .todo__item li.editMode label {
     display:none;
 }
